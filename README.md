@@ -2,7 +2,7 @@
  * @Author: shuoye
  * @Date: 2023-06-09 11:47:01
  * @LastEditors: shuoye
- * @LastEditTime: 2023-06-09 11:51:38
+ * @LastEditTime: 2024-10-24 10:42:27
  * @Description: file content
  * Copyright 2023 shuoye, All Rights Reserved.
 -->
@@ -23,7 +23,7 @@ It can be applied to related tasks such as <font color=Blue>Fine-grained visual 
 
 但是它们没有考虑 长尾分布、域漂移问题，为此，我们构建了Duorou数据集.
 
-![Duorou数据集示例图片](image/xxx.png)
+![Duorou数据集示例图片](./CDLT_data.png)
 
 ## Dataset Construction
 
