@@ -2,7 +2,7 @@
  * @Author: shuoye
  * @Date: 2023-06-09 11:47:01
  * @LastEditors: shuoye
- * @LastEditTime: 2024-10-24 10:42:27
+ * @LastEditTime: 2024-10-24 11:32:12
  * @Description: file content
  * Copyright 2023 shuoye, All Rights Reserved.
 -->
@@ -10,20 +10,34 @@
 
 [Paper Link](https://xxxxxxxxxxx.pdf)
 
-CDLT is a benchmark dataset for fine-grained visual categorization. It starts from the real-world conditions and aims to promote the practical progress of FGVC. The dataset is collected by gathering 11195 images of 250 instances in different species for 47 consecutive months in their natural contexts.  The collection process involves dozens of crowd workers for photographing and domain experts for labeling. 
-we present a Concept Drift and Long-Tailed Distribution dataset.   
+CDLT is a benchmark dataset for fine-grained visual categorization. It starts from the real-world conditions and aims to promote the practical progress of FGVC. The dataset is collected by gathering 11195 images of 250 instances in different species for 47 consecutive months in their natural contexts.  The collection process involves dozens of crowd workers for photographing and domain experts for labeling.  
 
-It can be applied to related tasks such as <font color=Blue>Fine-grained visual categorization</font>, <font color=Blue>Long-tail distribution learning</font>, and <font color=Blue>Single-domain generalization learning</font>.
+CDLT can be applied to related tasks such as 
+<font color=Blue>Fine-grained visual categorization</font>, 
+<font color=Blue>Long-tail distribution learning</font>,  
+<font color=Blue>Single-domain generalization learning</font>.
 
-* Download Link: [谷歌云盘地址]()
+ <img src="./CDLT_data.png" width = 100% height = 100%  alt="Sample of images from the CDLT dataset" margin:0 auto />
 
-## Description
+ * Download Link: [谷歌云盘地址]()
 
-现有细粒度数据集的总结
+---
+# Core challenge
+## Concept Drift
+- Concept drift can be distinguished as four types according to the variation form of the instance: sudden, incremental, recurring, and gradual, as shown in Figure 2 (a). 
 
-但是它们没有考虑 长尾分布、域漂移问题，为此，我们构建了Duorou数据集.
+- The types of drift in CDLT not only include incremental and sudden, but also has periodic drift which is different from recurring, and instead indicates repeated conversion in regular intervals, as shown in Figure 2 (b).
 
-![Duorou数据集示例图片](./CDLT_data.png)
+
+<img src="./CD_Expression paradigm.jpg" width = 100% height = 100%  alt="Sample of images from the CDLT dataset" margin:0 auto />
+Figure 2. Examples of different concept drift types. Red and blue represent two different concepts, while the light color represents the intermediate concept which appears during the transformation from one to another.
+
+<img src="./CD_Expression image.jpg" width = 100% height = 100%  alt="Sample of images from the CDLT dataset" margin:0 auto />
+Figure 3. A visual representation of different types of data drift.
+
+
+## Long-tail Distribution 
+<img src="./LTLT_distribution.png" width = 100% height = 100%  alt="Sample of images from the CDLT dataset" margin:0 auto />
 
 ## Dataset Construction
 
