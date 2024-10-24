@@ -6,11 +6,14 @@
  * @Description: file content
  * Copyright 2023 shuoye, All Rights Reserved.
 -->
-# DuoRou Dataset Release
+# Description
 
 [Paper Link](https://xxxxxxxxxxx.pdf)
 
-We construct a novel 长尾-域漂移？细粒度数据集的基准 benchmark, namely `Duorou`, which includes all tasks, i.e., 细粒度图像分类, 长尾分布学习, and 单域泛化学习.
+CDLT is a benchmark dataset for fine-grained visual categorization. It starts from the real-world conditions and aims to promote the practical progress of FGVC. The dataset is collected by gathering 11195 images of 250 instances in different species for 47 consecutive months in their natural contexts.  The collection process involves dozens of crowd workers for photographing and domain experts for labeling. 
+we present a Concept Drift and Long-Tailed Distribution dataset.   
+
+It can be applied to related tasks such as <font color=Blue>Fine-grained visual categorization</font>, <font color=Blue>Long-tail distribution learning</font>, and <font color=Blue>Single-domain generalization learning</font>.
 
 * Download Link: [谷歌云盘地址]()
 
