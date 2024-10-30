@@ -2,7 +2,7 @@
  * @Author: shuoye
  * @Date: 2023-06-09 11:47:01
  * @LastEditors: shuoye
- * @LastEditTime: 2024-10-30 10:41:44
+ * @LastEditTime: 2024-10-30 10:50:52
  * @Description: file content
  * Copyright 2023 shuoye, All Rights Reserved.
 -->
@@ -58,12 +58,13 @@ Two versions of the CDLT dataset in use.
 ### VLMs in Long-Tailed Distributions
 We use the results obtained by loading only the pre-trained parameters without any additional training as the pre-training baseline, obtaining only the number of classes in each dataset as prior knowledge. This approach aims to evaluate the performance of the model’s pre-trained knowledge across different visual concepts. Fine-tuning of CLIP is implemented by adding an Adapter to the text encoder. During training, a similarity matrix is calculated using the visual features of the current batch and the text features of all classes, with irrelevant text, such as label codes (e.g., n365697), removed from the dataset labels.
 
-<img src="./" width = 80% height = 80%  alt="Sample of images from the CDLT dataset" margin:0 auto />
-
+<p align="center">
+  <img src="./CLIP_Pre_result.png" width="80%" height="80%" alt="Sample of images from the CDLT dataset" />
+</p>
 
 It can be observed that the pre-trained knowledge is already sufficient to handle many common fine-grained targets.  After fine-tuning, accuracy improves across four datasets;  however, it decreases on the Stanford Cars and CDLT datasets.
 
-We further visualized the model's results for each subclass, The model performs remarkably on well-defined visual concepts, such as ``African hunting dog" in the Stanford Dogs dataset, achieving a classification accuracy of 92\% during testing.  However, it demonstrates catastrophic misinterpretation on more ambiguous subclasses, like ``redbone," with a test classification accuracy of only 0.09\%.
+We further visualized the model's results for each subclass, The model performs remarkably on well-defined visual concepts, such as "African hunting dog" in the Stanford Dogs dataset, achieving a classification accuracy of 92% during testing.  However, it demonstrates catastrophic misinterpretation on more ambiguous subclasses, like "redbone," with a test classification accuracy of only 0.09\%.
 
 One reason for this phenomenon is that fine-grained labels often involve highly detailed descriptions to differentiate between categories.  These descriptions are relatively uncommon and require a certain level of expertise, frequently involving various abbreviations.  Additionally, the minimal differences between labels may hinder the model’s ability to extract precise category information.
 
