@@ -2,7 +2,7 @@
  * @Author: shuoye
  * @Date: 2023-06-09 11:47:01
  * @LastEditors: shuoye
- * @LastEditTime: 2024-10-31 15:07:14
+ * @LastEditTime: 2024-10-31 15:09:43
  * @Description: file content
  * Copyright 2023 shuoye, All Rights Reserved.
 -->
@@ -85,9 +85,6 @@ Our visualization reveals three key insights:
 
 <!--
 ---
-
-## Citation
-
  Please consider to cite our paper when you use our dataset.
 - If you are interested in the experiments on the CDLT dataset, you can partially refer to the following work.
 
@@ -103,6 +100,7 @@ issn = {1077-3142},
 doi = {https://doi.org/10.1016/j.cviu.2023.103837},
 }
 ``` -->
+
 **NOTE**: The dataset can only be used for non-commercial purposes!
 
 ### ACKNOWLEDGMENT
