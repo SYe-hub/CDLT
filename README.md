@@ -2,7 +2,7 @@
  * @Author: shuoye
  * @Date: 2023-06-09 11:47:01
  * @LastEditors: shuoye
- * @LastEditTime: 2024-10-31 10:00:37
+ * @LastEditTime: 2024-10-31 15:07:14
  * @Description: file content
  * Copyright 2023 shuoye, All Rights Reserved.
 -->
@@ -16,6 +16,7 @@ CDLT can be applied to related tasks such as
 <font color=Blue>Single-domain generalization learning</font>.
 
  <img src="./CDLT_data.png" width = 100% height = 100%  alt="Sample of images from the CDLT dataset" margin:0 auto />
+Figure 1. Examples from CDLT.
 
 * [Paper Link](https://arxiv.org/pdf/2306.02346)
 * [Dataset Download Link](https://drive.google.com/drive/folders/1LuWyQq74ZRe1Zo-Nvg3U2gUB5NRqLbX3)
@@ -64,7 +65,10 @@ Two versions of the CDLT dataset in use.
 ## Benchmark
 
 The classification performance of the SOTA FGVC methods on CDLT and CUB-200-2011.
+<img src="./Result_CDLT_and_CUB.png" width = 50% height = 60%  alt="Sample of images from the CDLT dataset" margin:0 auto />
 
+The performance of the SOTA models on concept drift issues.
+<img src="./Result_CDLT_and_CDLT-cd.png" width = 50% height = 60%  alt="Sample of images from the CDLT dataset" margin:0 auto />
 
 ### VLMs in Long-Tailed Distributions
 We use the results obtained by loading only the pre-trained parameters without any additional training as the pre-training baseline, obtaining only the number of classes in each dataset as prior knowledge. This approach aims to evaluate the performance of the model’s pre-trained knowledge across different visual concepts. Fine-tuning of CLIP is implemented by adding an Adapter to the text encoder. During training, a similarity matrix is calculated using the visual features of the current batch and the text features of all classes, with irrelevant text, such as label codes (e.g., n365697), removed from the dataset labels.
@@ -79,11 +83,12 @@ Our visualization reveals three key insights:
 
 (3) This explains why recent generation-based large models tend to produce peculiar errors when applied to FGVC tasks.
 
+<!--
 ---
 
 ## Citation
 
-Please consider to cite our paper when you use our dataset.
+ Please consider to cite our paper when you use our dataset.
 - If you are interested in the experiments on the CDLT dataset, you can partially refer to the following work.
 
 ```
@@ -97,7 +102,7 @@ year = {2023},
 issn = {1077-3142},
 doi = {https://doi.org/10.1016/j.cviu.2023.103837},
 }
-```
+``` -->
 **NOTE**: The dataset can only be used for non-commercial purposes!
 
 ### ACKNOWLEDGMENT
