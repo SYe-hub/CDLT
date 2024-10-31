@@ -2,7 +2,7 @@
  * @Author: shuoye
  * @Date: 2023-06-09 11:47:01
  * @LastEditors: shuoye
- * @LastEditTime: 2024-10-31 09:51:58
+ * @LastEditTime: 2024-10-31 10:00:37
  * @Description: file content
  * Copyright 2023 shuoye, All Rights Reserved.
 -->
@@ -48,10 +48,11 @@ When multiple instances appear in an image, we follow that the cropped image con
 Two versions of the CDLT dataset in use.
 - CDLT. It can be used for general FGVC tasks or long-tail distribution research. Both Training set and Test set contains data from the entire year.
 - CDLT-cd. It is specifically designed for concept drift research.  Training set contains data from a single season, while the Test set covers data from the entire year.
+
 **NOTE**:Not every subclass has a significant periodic drift with the seasons.  So the other subclasses in this training set, we only include divide out instances those with significant concept drift.
 
 > ##### Organizational structure of CDLT：
->   - duorou_V7.2
+>   - duorou_V7.2<br>
 >     --images/test_split.txt/train_split.txt<br>  
 >     ----train/test<br>
 >     ------ 001_Eup._Eup._Euphorbia-oncoclada<br>
@@ -62,6 +63,7 @@ Two versions of the CDLT dataset in use.
 ---
 ## Benchmark
 
+The classification performance of the SOTA FGVC methods on CDLT and CUB-200-2011.
 
 
 ### VLMs in Long-Tailed Distributions
