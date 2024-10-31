@@ -2,7 +2,7 @@
  * @Author: shuoye
  * @Date: 2023-06-09 11:47:01
  * @LastEditors: shuoye
- * @LastEditTime: 2024-10-31 09:33:39
+ * @LastEditTime: 2024-10-31 09:51:58
  * @Description: file content
  * Copyright 2023 shuoye, All Rights Reserved.
 -->
@@ -52,15 +52,17 @@ Two versions of the CDLT dataset in use.
 
 > ##### Organizational structure of CDLT：
 >   - duorou_V7.2
->     --images/test_split.txt/train_split.txt  
->     ----train/test
->     ------ 001_Eup._Eup._Euphorbia-oncoclada
->     --------S1/S2 
->     ----------Euphorbia-oncoclada_00001.jpg
+>     --images/test_split.txt/train_split.txt<br>  
+>     ----train/test<br>
+>     ------ 001_Eup._Eup._Euphorbia-oncoclada<br>
+>     --------S1/S2<br> 
+>     ----------Euphorbia-oncoclada_00001.jpg<br>
 
  <!-- To avoid discrepancies in results due to differences in the amount of training data, the data scale for both training modes in CDLT-cd is consistent.  -->
 ---
 ## Benchmark
+
+
 
 ### VLMs in Long-Tailed Distributions
 We use the results obtained by loading only the pre-trained parameters without any additional training as the pre-training baseline, obtaining only the number of classes in each dataset as prior knowledge. This approach aims to evaluate the performance of the model’s pre-trained knowledge across different visual concepts. Fine-tuning of CLIP is implemented by adding an Adapter to the text encoder. During training, a similarity matrix is calculated using the visual features of the current batch and the text features of all classes, with irrelevant text, such as label codes (e.g., n365697), removed from the dataset labels.
