@@ -81,23 +81,7 @@ Our visualization reveals three key insights:
 
 ---
 
-## Citation
 
-Please consider to cite our paper when you use our dataset.
-- If you are interested in the experiments on the CDLT dataset, you can partially refer to the following work.
-
-```
-@article{YE2023103837,
-title = {Coping with change: Learning invariant and minimum sufficient representations for fine-grained visual categorization},
-author = {Shuo Ye and Shujian Yu and Wenjin Hou and Yu Wang and Xinge You},
-journal = {Computer Vision and Image Understanding},
-volume = {237},
-pages = {103837},
-year = {2023},
-issn = {1077-3142},
-doi = {https://doi.org/10.1016/j.cviu.2023.103837},
-}
-```
 **NOTE**: The dataset can only be used for non-commercial purposes!
 
 ### ACKNOWLEDGMENT
