@@ -53,7 +53,7 @@ Two versions of the CDLT dataset in use.
 **NOTE**:Not every subclass has a significant periodic drift with the seasons.  So the other subclasses in this training set, we only include divide out instances those with significant concept drift.
 
 > ##### Organizational structure of CDLT：
->   - duorou_V7.2<br>
+>   - CDLT<br>
 >     --images/test_split.txt/train_split.txt<br>  
 >     ----train/test<br>
 >     ------ 001_Eup._Eup._Euphorbia-oncoclada<br>
