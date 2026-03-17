@@ -19,7 +19,7 @@ CDLT can be applied to related tasks such as
 Figure 1. Examples from CDLT.
 
 * [Paper Link](https://arxiv.org/pdf/2306.02346)
-* [Dataset Download Link](https://drive.google.com/drive/folders/1LuWyQq74ZRe1Zo-Nvg3U2gUB5NRqLbX3)
+* [Dataset Download Link](https://pan.baidu.com/s/1EYp2vszxvO5ZUTjz1zm-9Q?pwd=ungb)
 ---
 ## Challenges
 ### Concept Drift
